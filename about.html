@@ -1,3 +1,10 @@
+<? php
+
+$include("indialive.php")
+
+?>
+
+
 <!doctype html>
 <html lang="en">
 
@@ -19,8 +26,7 @@
             <nav class="navbar navbar-dark bg-dark">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="/Covid-19/index.html">
-                        <img src="logo.png" alt="" height="30px"
-                            class="d-inline-block align-text-top">
+                        <img src="logo.png" alt="" height="30px" class="d-inline-block align-text-top">
                         Covid-19
                     </a>
                 </div>
@@ -39,19 +45,22 @@
                         <a class="nav-link active" href="/Covid-19/about.html">About</a>
                     </li>
                     <li class="nav-item dropdown active">
-                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown"
-                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
                             Help Line
                         </a>
                         <ul class="dropdown-menu active" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="Oxygen.pdf"target="_break">Emergency Oxygen war room</a></li>
-                            <li><a class="dropdown-item" href="Helpline Number.pdf"target="_break">Control Room</a></li>
-                            <li><a class="dropdown-item" href="faq.pdf"target="_break">FAQ</a></li>
-                            <li><a class="dropdown-item" href="What is Covid-19.pdf"target="_break">What is Covid-19</a></li>
-                            <li>
+                            <li><a class="dropdown-item" href="Oxygen.pdf" target="_break">Emergency Oxygen war room</a>
+                            </li>
+                            <li><a class="dropdown-item" href="Helpline Number.pdf" target="_break">Control Room</a>
+                            </li>
+                            <li><a class="dropdown-item" href="faq.pdf" target="_break">FAQ</a></li>
+                            <li><a class="dropdown-item" href="What is Covid-19.pdf" target="_break">What is
+                                    Covid-19</a></li>
+                            <!-- <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="/Covid-19/sos.html">SOS</a></li>
+                            <li><a class="dropdown-item" href="/sos.html">SOS</a></li>-->
                         </ul>
                     </li>
                     <li class="nav-item active">
@@ -63,6 +72,11 @@
                         <a class="nav-link active" href="https://yashwanthm.github.io/cowin-vaccine-booking/"
                             target="_blank">Vaccine Bookings</a>
                     </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="indialive.php">IndiaLive</a>
+                    </li>
+
                     <li class="nav-item active">
                         <a class="nav-link active" href="/Covid-19/contact.html">Contact Us</a>
                     </li>
@@ -74,47 +88,102 @@
             </div>
         </div>
     </nav>
-<div class="container my-5 mx-5" >
-    <div class="row featurette center-align" >
-        <div class="col-md-7 order-md-2" >
-          <h2 class="featurette-heading">How We Started.</h2>
-          <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
+    <div class="container">
+        <br>
+        <div class="row featurette">
+            <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading">How We Started.</h2>
+                <p class="lead">We started with a basic knowledge of web development and the motive of learning
+                    a lotnew skiills.
+                </p>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <img src="4.webp"
+                    class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" alt="..."
+                    width="520" height="200">
+            </div>
         </div>
-        <div class="col-md-5 order-md-1">
-            <img src="https://source.unsplash.com/user/erondu/1600x900" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img" height="200px" width="520px" alt="...">
+
+        <hr class="featurette-divider">
+        <div class="row featurette">
+            <div class="col-md-7 order-md-1">
+                <h2 class="featurette-heading">Our Aim.</h2>
+                <p class="lead">Our aim is to provide the daily update of the corona cases of india of every 
+                    state and to spread basic information about covid-19.
+                </p>
+            </div>
+            <div class="col-md-5 order-md-2">
+                <img src="5.png"
+                    class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" alt="..."
+                    width="520" height="200">
+            </div>
         </div>
-      </div>
-      <hr class="featurette-divider">
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">Our Aim.</h2>
-          <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.</p>
+        <!----
+        <hr class="featurette-divider">
+        <div class="row featurette">
+            <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading">Design.</h2>
+                <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how
+                    this layout would work with some actual real-world content in place.</p>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <img src="https://source.unsplash.com/user/erondu/1600x900"
+                    class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" alt="..."
+                    width="520" height="200">
+            </div>
         </div>
-        <div class="col-md-5 order-md-1">
-            <img src="https://source.unsplash.com/user/erondu/1600x900" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img" height="200px" width="520px" alt="...">
-        </div>
-      </div>
-      <hr class="featurette-divider">
-      <div class="row featurette center-align" >
-        <div class="col-md-7 order-md-2" >
-          <h2 class="featurette-heading">Developers.</h2>
-          <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
-        </div>
-        <div class="col-md-5 order-md-1">
-            <img src="https://source.unsplash.com/user/erondu/1600x900" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img" height="200px" width="520px" alt="...">
-        </div>
-      </div>
-      <hr class="featurette-divider">
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-          <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.</p>
-        </div>
-        <div class="col-md-5 order-md-1">
-            <img src="https://source.unsplash.com/user/erondu/1600x900" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img" height="200px" width="520px" alt="...">
-        </div>
-      </div>
-</div>
+        <hr class="featurette-divider">
+        <div class="row featurette">
+            <div class="col-md-7 order-md-1">
+                <h2 class="featurette-heading">Policy</h2>
+                <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really
+                    intended to be actually read, simply here to give you a better view of what this would look like
+                    with some actual content. Your content.</p>
+            </div>
+            <div class="col-md-5 order-md-2">
+                <img src="https://source.unsplash.com/user/erondu/1600x900"
+                    class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" alt="..."
+                    width="520" height="200">
+            </div>
+        </div>-->
+    </div>
+    <br>
+    <hr class="featurette-divider">
+    <h2 class=" container Heading font-weight-bold  bg-dark text-white text-center">Developers</h2>
+    <br>
+    <div class=" container-fluid row">
+        <div class="col-lg-3 text-center">
+            <img src="https://source.unsplash.com/user/erondu/1600x900" class="bd-placeholder-img rounded-circle"
+                width="140" height="140">
+            <h2>ISHITA  BANSAL</h2>
+            <p>Database,API</p>
+            <p><a class="btn btn-primary" href="#">View details »</a></p>
+        </div><!-- /.col-lg-3 -->
+        <div class="col-lg-3 text-center">
+            <img src="https://source.unsplash.com/user/erondu/1600x900" class="bd-placeholder-img rounded-circle"
+                width="140" height="140">
+
+            <h2>ABHISHEK SHARMA</h2>
+            <p>Designer,Developer</p>
+            <p><a class="btn btn-primary" href="#">View details »</a></p>
+        </div><!-- /.col-lg-3 -->
+        <div class="col-lg-3 text-center">
+            <img src="https://source.unsplash.com/user/erondu/1600x900" class="bd-placeholder-img rounded-circle"
+                width="140" height="140">
+
+            <h2>UTKARSH MISHRA</h2>
+            <p>Database</p>
+            <p><a class="btn btn-primary" href="#">View details »</a></p>
+        </div><!-- /.col-lg-3 -->
+        <div class="col-lg-3 text-center">
+            <img src="https://source.unsplash.com/user/erondu/1600x900" class="bd-placeholder-img rounded-circle"
+                width="140" height="140">
+            <h2>DEEPEN LAKRA</h2>
+            <p>Database</p>
+            <p><a class="btn btn-primary" href="#">View details »</a></p>
+        </div><!-- /.col-lg-3 -->
+    </div>
+
 
     <footer class="my-5 pt-5 text-muted text-center text-small">
         <h5 class="card-title">Made In India</h5>
