@@ -18,7 +18,26 @@ $include("indialive.php")
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 
     <title>Covid-19</title>
-    <style></style>
+    <style>
+    
+    iframe {
+        
+        margin: 20px 50px 20px 20px;
+    }
+
+    blink{
+        animation: blink 2s linear infinite;
+    }
+
+    @keyframes blink{
+      0%{opacity:1;}
+      50%{opacity:.5;}
+      100%{opacity:1;}
+       }
+    }
+
+   
+    </style>
 </head>
 
 <body>
@@ -145,6 +164,83 @@ $include("indialive.php")
         </button>
     </div>
     <br>
+    <br>
+    <div class="container text-center">
+       <button style="margin:5px" type="button" class="btn btn-outline-primary btn-lg"><B>Total Cases</B></button>
+       <button style="margin:5px" type="button" class="btn btn-outline-secondary btn-lg"><B>Active Cases</B></button>
+       <button style="margin:5px" type="button" class="btn btn-outline-success btn-lg"><B>Recovered</B></button>
+       <button style="margin:5px" type="button" class="btn btn-outline-danger btn-lg"><B>Deaths</B></button>
+    </div>
+    <br>
+    <br>
+    <div style="margin: 50px">
+    <iframe width="500" height="350" src="https://www.youtube-nocookie.com/embed/PSnSo9kYlH4" 
+    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+    encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="float:left" ></iframe>
+    </div>
+    <br>
+    <div class="container text-right style="margin-left:20px">
+    <h2><B>What is Covid?</B></h2>
+    <br>
+    <ul>
+      <li>
+         Coronaviruses (CoV) are a large family of viruses that cause illness ranging from the common cold 
+        to more severe diseases.
+     </li>
+     <br>
+     <li>
+      A novel coronavirus (nCoV) is a new strain that has not been previously identified in humans.
+     Coronaviruses are zoonotic. 
+     </li>
+     <br>
+     <li>
+      In more severe cases, infection can cause pneumonia, severe acute respiratory syndrome, kidney 
+     failure and even death.
+     </li>
+     <br>
+     <li>
+      Standard recommendations to prevent infection spread include regular hand washing, covering mouth and nose
+     when coughing and sneezing.
+     </li>
+    </ul>
+    </div>
+    <br>
+    <br>
+    <div>
+     <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/UcFDdfueQRg" 
+     title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+     encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="float:right"></iframe>
+    </div>
+   <br>
+   <div class="container text-left style="margin-left:20px">
+    <h2><B>Symptoms of Covid-19</B></h2>
+    <br>
+    <ul>
+      <li>Fever</li>
+      <li>Dry cough and running nose</li>
+      <li>Fatigue OR myalgia</li>
+      <li>Respiratory symptoms</li>
+    </ul>
+    <h2>Severe Symptoms</h2>
+   
+    <ul>
+      <li>Shortness of breath.</li>
+      <li>Chest pain and pneumonia.</li>
+      <li>Speech or movement loss.</li>
+      <li>Organ failure.</li>
+    </ul>
+    <br>
+    <br>
+    <div class="container text-center"><span>
+    <B><p style="background-color:orange; font-size:50;"><br><blink>For any query related to COVID-19, have a look over official covid 
+    website <a href="https://www.mohfw.gov.in/"> COVID-19 </blink><br></a></p></B>
+ 
+    </span></div>
+
+
+
+
+    <!---
     <div class="container text-center">
         <I><marquee><h1 style="background-color: rosybrown">What is C<img src="virus.jpg" height="100" >vid - 19???</h1></marquee></I>
     </div>
@@ -221,7 +317,7 @@ $include("indialive.php")
                 </div>
             </div>
         </div>
-    </div>
+    </div>  -->
     <footer class="my-5 pt-5 text-muted text-center text-small">
         <h5 class="card-title">Made In India</h5>
         <p class="mb-1">Copyright© 2021–2022 COVID-19</p>
