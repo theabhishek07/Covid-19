@@ -89,18 +89,18 @@
 
 <section class="corona_update container-fluid">
     <div class=" mb-3 ">
-        <h3 class="text-center text-uppercase"> COVID-19 LIVE UPDATES
+       <br><br> <h3 class="text-center text-uppercase" style="background-color:red"><marquee>COVID-19 LIVE UPDATES!!!!!</marquee></h3>
     </div>
-
+    <br>
     <div class="table-responsive">
         <table class="table table-bordered table-striped text-center" id="tbval">
             <tr>
-                <th class="text-capitalize">lastupdatedtime</th>
-                <th class="text-capitalize">state</th>
-                <th class="text-capitalize">active</th>
-                <th class="text-capitalize">confirmed</th>
-                <th class="text-capitalize">deaths</th>
-                <th class="text-capitalize">recovered</th>
+                <th class="text-capitalize" style="background-color:dodgerblue">lastupdatedtime</th>
+                <th class="text-capitalize" style="background-color:dodgerblue">state</th>
+                <th class="text-capitalize" style="background-color:dodgerblue">active</th>
+                <th class="text-capitalize" style="background-color:dodgerblue">confirmed</th>
+                <th class="text-capitalize" style="background-color:dodgerblue">deaths</th>
+                <th class="text-capitalize" style="background-color:dodgerblue">recovered</th>
             </tr>
 
             <?php
@@ -122,12 +122,12 @@
                 ?>
 
                 <tr>
-                    <td><?php echo $coronaupdate['statewise'][$i]['lastupdatedtime'] ?></td>
-                    <td><?php echo $coronaupdate['statewise'][$i]['state'] ?></td>
-                    <td><?php echo $coronaupdate['statewise'][$i]['active'] ?></td>
-                    <td><?php echo $coronaupdate['statewise'][$i]['confirmed'] ?></td>
-                    <td><?php echo $coronaupdate['statewise'][$i]['deaths'] ?></td>
-                    <td><?php echo $coronaupdate['statewise'][$i]['recovered'] ?></td>
+                    <td style="background-color:orange"><?php echo $coronaupdate['statewise'][$i]['lastupdatedtime'] ?></td>
+                    <td style="background-color:mediumseagreen"><?php echo $coronaupdate['statewise'][$i]['state'] ?></td>
+                    <td style="background-color:yellow"><?php echo $coronaupdate['statewise'][$i]['active'] ?></td>
+                    <td style="background-color:violet"><?php echo $coronaupdate['statewise'][$i]['confirmed'] ?></td>
+                    <td style="background-color:tomato"><?php echo $coronaupdate['statewise'][$i]['deaths'] ?></td>
+                    <td style="background-color:pink"><?php echo $coronaupdate['statewise'][$i]['recovered'] ?></td>
                 </tr>
                  
                 <?php
