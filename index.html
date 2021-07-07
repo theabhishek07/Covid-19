@@ -1,3 +1,10 @@
+<? php
+
+$include("indialive.php")
+
+?>
+
+
 <!doctype html>
 <html lang="en">
 
@@ -11,7 +18,26 @@
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 
     <title>Covid-19</title>
-    <style></style>
+    <style>
+    
+    iframe {
+        
+        margin: 20px 50px 20px 20px;
+    }
+
+    blink{
+        animation: blink 2s linear infinite;
+    }
+
+    @keyframes blink{
+      0%{opacity:1;}
+      50%{opacity:.5;}
+      100%{opacity:1;}
+       }
+    }
+
+   
+    </style>
 </head>
 
 <body>
@@ -38,14 +64,6 @@
                     <li class="nav-item active">
                         <a class="nav-link active" href="/Covid-19/about.html">About</a>
                     </li>
-                    <li class="nav-item active">
-                        <a class="nav-link active" href="What is Covid-19.pdf" target="_blank" >What is Covid-19</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link active"
-                            href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public?gclid=CjwKCAjww-CGBhALEiwAQzWxOvMNJx40_8VCMZGaFumspLjvC_6SllKC9spkoS5_ocbkMuyz_SsbUxoC5D8QAvD_BwE"
-                            target="_blank">Precautions</a>
-                    </li>
                     <li class="nav-item dropdown active">
                         <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
@@ -57,20 +75,28 @@
                             <li><a class="dropdown-item" href="Helpline Number.pdf" target="_break">Control Room</a>
                             </li>
                             <li><a class="dropdown-item" href="faq.pdf" target="_break">FAQ</a></li>
-                           <!-- <li><a class="dropdown-item" href="What is Covid-19.pdf" target="_break">What is
+                            <li><a class="dropdown-item" href="What is Covid-19.pdf" target="_break">What is
                                     Covid-19</a></li>
-                             <li>
+                            <!-- <li>
                                 <hr class="dropdown-divider">
                             </li>
                             <li><a class="dropdown-item" href="/sos.html">SOS</a></li>-->
                         </ul>
                     </li>
-                    
-                   
+                    <li class="nav-item active">
+                        <a class="nav-link active"
+                            href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public?gclid=CjwKCAjww-CGBhALEiwAQzWxOvMNJx40_8VCMZGaFumspLjvC_6SllKC9spkoS5_ocbkMuyz_SsbUxoC5D8QAvD_BwE"
+                            target="_blank">Precautions</a>
+                    </li>
                     <li class="nav-item active">
                         <a class="nav-link active" href="https://yashwanthm.github.io/cowin-vaccine-booking/"
                             target="_blank">Vaccine Bookings</a>
                     </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="indialive.php">IndiaLive</a>
+                    </li>
+
                     <li class="nav-item active">
                         <a class="nav-link active" href="/Covid-19/contact.html">Contact Us</a>
                     </li>
@@ -82,7 +108,7 @@
             </div>
         </div>
     </nav>
-    <div id="carouselExampleCaptions" class="carousel slide carousel-fade row-col" data-bs-ride="carousel">
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
                 aria-current="true" aria-label="Slide 1"></button>
@@ -90,39 +116,39 @@
                 aria-label="Slide 2"></button>
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
                 aria-label="Slide 3"></button>
-        </div>
+        </div> 
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img src="1.jfif" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h2>Welcome to Covid Help Desk</h2>
-                    <!---  <div class="container-fluid ">
+                   <!--- <div class="container-fluid ">
                         <label>Active</label>
                         <label>Recovered</label>
                         <label>Deaths</label>
                         <br>
-                  <a href="#"> <button class="btn btn-primary">448451616151</button></a>
+                    <a href="#"> <button class="btn btn-primary">448451616151</button></a>
                     <a href="#"> <button class="btn btn-success">518451156</button></a> 
                     <a href="#"> <button class="btn btn-danger">84615161</button></a>
-                    </div>-->
+                    </div> -->
                 </div>
             </div>
             <div class="carousel-item">
                 <img src="2.jfif" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h2>Welcome to Covid Help Desk</h2>
-                   <!-- <button type="button" class="btn btn-primary btn-lg">Active</button>
+                   <!--- <button type="button" class="btn btn-primary btn-lg">Active</button>
                     <button type="button" class="btn btn-success btn-lg">Recovered</button>
-                    <button type="button" class="btn btn-danger btn-lg">Deaths</button>-->
+                    <button type="button" class="btn btn-danger btn-lg">Deaths</button> -->
                 </div>
             </div>
             <div class="carousel-item">
                 <img src="3.jfif" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h2>Welcome to Covid Help Desk</h2>
-                    <!--<button type="button" class="btn btn-primary btn-lg">Active</button>
+                   <!--- <button type="button" class="btn btn-primary btn-lg">Active</button>
                     <button type="button" class="btn btn-success btn-lg">Recovered</button>
-                    <button type="button" class="btn btn-danger btn-lg">Deaths</button>-->
+                    <button type="button" class="btn btn-danger btn-lg">Deaths</button> -->
                 </div>
             </div>
         </div>
@@ -138,57 +164,160 @@
         </button>
     </div>
     <br>
-    <div class="container text-center font-weight-bold font-italic">
-        <h2>Most Affected States</h2>
-        <div class="container my-4">
-            <div class="row row-cols-1 row-cols-md-4 g-4">
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="Delhi.jpg" class="card-img-top"
-                            alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Delhi</h5>
-                            <p class="card-text">Among worst-hit states, Delhi has best Covid recovery rate of 97.58%.
-                                Delhi has added 623 cases to take its tally to 1426863.
-                            </p>
-                        </div>
+    <br>
+    <div class="container text-center">
+       <button style="margin:5px" type="button" class="btn btn-outline-primary btn-lg"><B>Total Cases</B></button>
+       <button style="margin:5px" type="button" class="btn btn-outline-secondary btn-lg"><B>Active Cases</B></button>
+       <button style="margin:5px" type="button" class="btn btn-outline-success btn-lg"><B>Recovered</B></button>
+       <button style="margin:5px" type="button" class="btn btn-outline-danger btn-lg"><B>Deaths</B></button>
+    </div>
+    <br>
+    <br>
+    <div style="margin: 50px">
+    <iframe width="500" height="350" src="https://www.youtube-nocookie.com/embed/PSnSo9kYlH4" 
+    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+    encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="float:left" ></iframe>
+    </div>
+    <br>
+    <div class="container text-right style="margin-left:20px">
+    <h2><B>What is Covid?</B></h2>
+    <br>
+    <ul>
+      <li>
+         Coronaviruses (CoV) are a large family of viruses that cause illness ranging from the common cold 
+        to more severe diseases.
+     </li>
+     <br>
+     <li>
+      A novel coronavirus (nCoV) is a new strain that has not been previously identified in humans.
+     Coronaviruses are zoonotic. 
+     </li>
+     <br>
+     <li>
+      In more severe cases, infection can cause pneumonia, severe acute respiratory syndrome, kidney 
+     failure and even death.
+     </li>
+     <br>
+     <li>
+      Standard recommendations to prevent infection spread include regular hand washing, covering mouth and nose
+     when coughing and sneezing.
+     </li>
+    </ul>
+    </div>
+    <br>
+    <br>
+    <div>
+     <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/UcFDdfueQRg" 
+     title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+     encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="float:right"></iframe>
+    </div>
+   <br>
+   <div class="container text-left style="margin-left:20px">
+    <h2><B>Symptoms of Covid-19</B></h2>
+    <br>
+    <ul>
+      <li>Fever</li>
+      <li>Dry cough and running nose</li>
+      <li>Fatigue OR myalgia</li>
+      <li>Respiratory symptoms</li>
+    </ul>
+    <h2>Severe Symptoms</h2>
+   
+    <ul>
+      <li>Shortness of breath.</li>
+      <li>Chest pain and pneumonia.</li>
+      <li>Speech or movement loss.</li>
+      <li>Organ failure.</li>
+    </ul>
+    <br>
+    <br>
+    <div class="container text-center"><span>
+    <B><p style="background-color:orange; font-size:50;"><br><blink>For any query related to COVID-19, have a look over official covid 
+    website <a href="https://www.mohfw.gov.in/"> COVID-19 </blink><br></a></p></B>
+ 
+    </span></div>
+
+
+
+
+    <!---
+    <div class="container text-center">
+        <I><marquee><h1 style="background-color: rosybrown">What is C<img src="virus.jpg" height="100" >vid - 19???</h1></marquee></I>
+    </div>
+    <br>
+    <div class="container"  >
+        <B><p style="background-color:rgb(159, 162, 165)"><I>Coronavirus disease (COVID-19) is an infectious disease caused by a newly 
+            discovered coronavirus.</I></p></B>
+        <br>
+        <B><p style="background-color:rgb(159, 162, 165)"><I>Most people infected with the COVID-19 virus will experience mild to moderate respiratory illness and 
+        recover without requiring special treatment.  Older people, and those with underlying medical problems 
+        like cardiovascular disease, diabetes, chronic respiratory disease, and cancer are more likely to develop
+        serious illness.</I></p></B>
+        <br>
+        <B><p style="background-color:rgb(159, 162, 165)"><I>The best way to prevent and slow down transmission is to be well informed about the COVID-19 virus, 
+        the disease it causes and how it spreads. Protect yourself and others from infection by washing your 
+        hands or using an alcohol based rub frequently and not touch.</I></p></B>
+        <br>
+        <B><p style="background-color:rgb(159, 162, 165)"><I>The COVID-19 virus spreads primarily through droplets of saliva or discharge from the nose when an 
+        infected person coughs or sneezes, so it’s important that you also practice respiratory etiquette 
+        (for example, by coughing into a flexed elbow).</I></p></B>
+    </div>
+    <br>
+    <div class="container text-center">
+        <U><B><I><h2 style="color:springgreen">Most Affected States</h2></I></B></U>
+    </div>
+    <br>
+    <div class="container my-4">
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="maharashtra.webp" class="card-img-top"
+                        alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Maharashtra</h5>
+                        <p class="card-text">The western state recorded 57,13,215 confirmed COVID-19 cases and 
+                            94,030 fatalities. The state currently has 2,76,573 active cases with the recovery 
+                            rate at 53,39,838.</p>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="Maharashtra.jpg" class="card-img-top"
-                            alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Maharashtra</h5>
-                            <p class="card-text">Maharashtra, the most affected state overall, has reported 14,123 new cases to take its tally to 5761015. The state has added 207,790 cases in the past 10 days.</p>
-                        </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="andhra pradesh.webp" class="card-img-top"
+                        alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Andhra Pradesh</h5>
+                        <p class="card-text">Second worst affected state in southern India with 16,71,742 
+                            confirmed COVID-19 cases and 10,738fatalities. The state currently has 1,73,622 
+                            active cases whereas 14,87,382 people recovered after the infection.</p>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="Uttar Pradesh.jpg" class="card-img-top"
-                            alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Uttar Pradesh</h5>
-                            <p class="card-text">Uttar Pradesh has added 1,221 cases to take its tally to 1692709.</p>
-                        </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="uttar pradesh.webp" class="card-img-top"
+                        alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Uttar Pradesh</h5>
+                        <p class="card-text">The most populous state in India recorded 16,88,152 confirmed 
+                            COVID-19 cases and 20,208 deaths. Uttar Pradesh currently has 46,201 active cases 
+                            with recovery rate at 16,21,743.</p>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="Karnataka.jpg" class="card-img-top"
-                            alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Karnataka</h5>
-                            <p class="card-text">Karnataka, the third-most-affected state, has reported 14,304 cases to take its tally to 2618735.</p>
-                        </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="delhi.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Delhi</h5>
+                        <p class="card-text">Cases in the country's capital state are rising daily and 
+                            currently have 13,035 active cases. The state recorded 14,24,646 confirmed cases 
+                            and 24,073 deaths with 13,87,538 people recovering from the virus.</p>
                     </div>
                 </div>
             </div>
         </div>
-        <br>
-        <a href="#"><button class=" btn btn-primary">India Live >></button></a>
-    </div>
+    </div>  -->
     <footer class="my-5 pt-5 text-muted text-center text-small">
         <h5 class="card-title">Made In India</h5>
         <p class="mb-1">Copyright© 2021–2022 COVID-19</p>
