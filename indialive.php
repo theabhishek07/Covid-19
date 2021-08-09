@@ -71,15 +71,15 @@
                         <a class="nav-link active" aria-current="page" href="indialive.php">IndiaLive</a>
                     </li>
 
-                    <li class="nav-item active">
+                  <!--  <li class="nav-item active">
                         <a class="nav-link active" href="/Covid-19/contact.html">Contact Us</a>
-                    </li>
-                   
+                    </li> -->
+
                 </ul>
-                <form class="d-flex" action="https://www.youtube.com/" target="_blank" method="get">
+                <!--<form class="d-flex" action="https://www.youtube.com/" target="_blank" method="get">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
+                </form> -->
             </div>
         </div>
     </nav>
@@ -104,7 +104,7 @@
             </tr>
 
             <?php
-            
+
             $data = file_get_contents('https://api.covid19india.org/data.json');
             $coronaupdate = json_decode($data, true);
 
@@ -129,7 +129,7 @@
                     <td style="background-color:tomato"><?php echo $coronaupdate['statewise'][$i]['deaths'] ?></td>
                     <td style="background-color:pink"><?php echo $coronaupdate['statewise'][$i]['recovered'] ?></td>
                 </tr>
-                 
+
                 <?php
 
                 $i++;
@@ -138,4 +138,10 @@
             ?>
         </table>
     </div>
+    <footer class="my-5 pt-5 text-muted text-center text-small">
+        <h5 class="card-title">MADE IN UPES</h5>
+        <p class="mb-1">Copyright© 2021–2022 COVID-19</p>
+        <a class="nav-link active" href="mailto:queriescovid@gmail.com">Contact Us</a>
+
+    </footer>
 </sectio/n>
